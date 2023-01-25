@@ -7,8 +7,12 @@
     <meta name="author" content="FadliGr | @fadligr1" />
 
     <title>Kahuripan Coffe - Dashboard</title>
-
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,6 +27,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
   <body>
     <aside class="sidebar offcanvas-lg offcanvas-start">
@@ -807,6 +814,27 @@
               </table>
             </div>
           </div>
+          <div class="card p-3 border-0 rounded-4 atas">
+            <div class="wrapper justify-content-between d-flex">
+              <p class="fw-normal text-black current-date"></p>
+              <div class="icons">
+                <i data-feather="chevron-left" class="icons-go"></i>
+                <i data-feather="chevron-right" class="icons-go"></i>
+              </div>
+            </div>
+            <div class="calender pt-3 justify-content-center">
+              <ul class="weeks d-flex">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+              </ul>
+              <ul class="days d-flex"></ul>
+            </div>
+          </div>
         </nav>
       </section>
 
@@ -1048,7 +1076,9 @@
         </div>
       </section> -->
     </main>
-
+    <script>
+      feather.replace()
+    </script>
     <script src="./js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
