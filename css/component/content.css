@@ -260,3 +260,18 @@
 .calender .days .active::before {
   background-color: #5865f2;
 }
+
+.btn-muted {
+  position: relative;
+  border: 0;
+  overflow: hidden;
+}
+
+.btn-muted input[type="file"] {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(3);
+  opacity: 0;
+}
