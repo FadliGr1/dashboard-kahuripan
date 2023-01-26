@@ -90,6 +90,22 @@
   .atas {
     max-width: 341px;
   }
+
+  .dua {
+    max-height: 280px;
+  }
+
+  .judul {
+    font-size: 14px;
+  }
+  .profile {
+    height: 50px;
+    width: 50px;
+  }
+
+  .mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -104,6 +120,41 @@
   .ter .teri {
     font-size: 6px !important;
     font-weight: normal;
+  }
+
+  .judul {
+    font-size: 10px !important;
+  }
+
+  .teri-img {
+    display: none;
+  }
+
+  .subudul {
+    font-size: 8px !important;
+  }
+
+  .btnku {
+    display: none;
+  }
+  .cek-2 {
+    width: 100%;
+    background-color: #2f73fe;
+    color: #fff;
+    height: 18px;
+    line-height: 20px;
+    font-size: 8px !important;
+    padding-left: 8px;
+  }
+
+  .cek-3 {
+    width: 100%;
+    background-color: #b70202;
+    color: #fff;
+    height: 18px;
+    line-height: 20px;
+    font-size: 8px !important;
+    padding-left: 4px;
   }
 }
 
