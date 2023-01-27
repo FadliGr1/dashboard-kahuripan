@@ -161,8 +161,6 @@
     font-size: 8px !important;
     padding-left: 4px;
   }
-
-  
 }
 
 .carousel .carousel-indicators li {
@@ -290,4 +288,13 @@
 
 .teks {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.aktif {
+  border-bottom: 4px solid #b70202;
+  border-radius: 10px 0px 0px 10px;
 }
