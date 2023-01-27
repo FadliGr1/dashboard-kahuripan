@@ -265,27 +265,61 @@
                     <th class="col">Nama</th>
                     <th class="col">Kota</th>
                     <th class="col">Email</th>
-                    <th class="col">N0 HP</th>
+                    <th class="col">No HP</th>
                     <th class="col">Alamat</th>
                     <th class="col">Action</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr class="ter">
-                    <th class="teri-img">
+                    <th
+                      class="teri-img"
+                      data-bs-toggle="modal"
+                      data-bs-target="#detail"
+                    >
                       <img
                         src="assets/images/admin.png"
                         alt=""
                         class="img-fluid profile"
                       />
                     </th>
-                    <th class="teri">Dody Bima</th>
-                    <th class="teri">Semarang</th>
-                    <th class="teri">dadybima@gmail.com</th>
-                    <th class="teri">123456787235</th>
-                    <th class="teri">Jl. Mayjen Sungkono No.89..</th>
+                    <th
+                      class="teri teks"
+                      data-bs-toggle="modal"
+                      data-bs-target="#detail"
+                    >
+                      Dody Bima
+                    </th>
+                    <th
+                      class="teri teks"
+                      data-bs-toggle="modal"
+                      data-bs-target="#detail"
+                    >
+                      Semarang
+                    </th>
+                    <th
+                      class="teri teks"
+                      data-bs-toggle="modal"
+                      data-bs-target="#detail"
+                    >
+                      dadybima@gmail.com
+                    </th>
+                    <th
+                      class="teri teks"
+                      data-bs-toggle="modal"
+                      data-bs-target="#detail"
+                    >
+                      087744370328
+                    </th>
+                    <th
+                      class="teri teks"
+                      data-bs-toggle="modal"
+                      data-bs-target="#detail"
+                    >
+                      Jl. Mayjen Sungkono No.89..
+                    </th>
                     <th class="teri">
-                      <div class="btnku">
+                      <div class="btnku mt-2">
                         <div
                           class="btn btn-sm btn-primary px-3 rounded-1"
                           type="button"
@@ -693,6 +727,76 @@
                         </div>
                       </div>
                     </th>
+
+                    <!-- detail modal -->
+                    <div
+                      class="modal fade"
+                      id="detail"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog p-3">
+                        <div class="modal-content">
+                          <div class="modal-header border-0">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                              Pelanggan
+                            </h1>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body border-0 p-3">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <img
+                                  src="assets/images/admin.png"
+                                  alt=""
+                                  class="img-dluid"
+                                />
+                              </div>
+                              <div class="col-md-10 mt-2">
+                                <p class="fw-semibold text-black">
+                                  Dady Bima
+                                </p>
+                                <p class="fw-normal text-black-50">
+                                  dadybima@gmail.com
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row my-2">
+                              <p class="fw-normal text-black">
+                                Nomor Hp
+                              </p>
+                              <p class="fw-normal text-black-50">
+                                087744370328
+                              </p>
+                            </div>
+                            <div class="row">
+                              <p class="fw-normal text-black">
+                                Kota
+                              </p>
+                              <p class="fw-normal text-black-50">
+                                Semarang
+                              </p>
+                            </div>
+                            <div class="row my-2">
+                              <p class="fw-normal text-black">
+                                Alamat
+                              </p>
+                              <p class="fw-normal text-black-50">
+                                Jl. Bulustalan V No.708-C, Bulustalan, Kec.
+                                Semarang Sel., Kota Semarang, Jawa Tengah 50245
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end detail modal -->
                   </tr>
                 </tbody>
               </table>
