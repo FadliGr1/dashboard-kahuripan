@@ -109,7 +109,7 @@
 
   .ter .teks {
     padding-top: 26px;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -123,7 +123,7 @@
   }
 
   .ter .teri {
-    font-size: 6px !important;
+    font-size: 10px !important;
     font-weight: normal;
   }
 
@@ -140,8 +140,9 @@
   }
 
   .btnku {
-    display: none;
+    display: flex;
   }
+
   .cek-2 {
     width: 100%;
     background-color: #2f73fe;
@@ -281,6 +282,14 @@
   opacity: 0;
 }
 
+.table-responsive {
+  border: none !important;
+}
+
+.teri,
+.teri-img {
+  border: none !important;
+}
 .kemana {
   cursor: pointer;
   text-decoration: none;
@@ -301,4 +310,8 @@ a {
 
 .aktif-dua {
   border-bottom: 4px solid #b70202;
+}
+
+.btnku .btn {
+  margin-right: 5px !important;
 }
