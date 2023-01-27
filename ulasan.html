@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Dashboard for Kahuripan Coffe" />
+    <meta name="author" content="FadliGr | @fadligr1" />
+
+    <title>Kahuripan Coffe - Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/32f82e1dca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <aside class="sidebar offcanvas-lg offcanvas-start">
+      <div class="d-flex justify-content-end m-4 d-block d-lg-none">
+        <button
+          data-bs-dismiss="offcanvas"
+          data-bs-target=".sidebar"
+          class="btn p-0 border-0 fs-4"
+          aria-label="Button Close"
+        >
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div class="logo-brand mt-lg-5">
+        <img src="./assets/images/logo.png" alt="Logo Shoso" height="50" />
+      </div>
+      <hr />
+      <nav class="menu flex-fill">
+        <div class="section-menu p-3">
+          <a href="index.html" class="item-menu">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_237_5437"
+                style="mask-type: alpha;"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="30"
+                height="30"
+              >
+                <rect width="30" height="30" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_237_5437)">
+                <path
+                  d="M20.8125 16.25L13.75 9.1875L20.8125 2.125L27.875 9.1875L20.8125 16.25ZM3.75 13.75V3.75H13.75V13.75H3.75ZM16.25 26.25V16.25H26.25V26.25H16.25ZM3.75 26.25V16.25H13.75V26.25H3.75Z"
+                  fill="#1C1B1F"
+                />
+              </g>
+            </svg>
+
+            <p>Dashboard</p>
+          </a>
+          <a href="pelanggan.html" class="item-menu">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_237_5413"
+                style="mask-type: alpha;"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="30"
+                height="30"
+              >
+                <rect width="30" height="30" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_237_5413)">
+                <path
+                  d="M15 16.25C16.2083 16.25 17.2396 15.8229 18.0938 14.9688C18.9479 14.1146 19.375 13.0833 19.375 11.875C19.375 10.6667 18.9479 9.63542 18.0938 8.78125C17.2396 7.92708 16.2083 7.5 15 7.5C13.7917 7.5 12.7604 7.92708 11.9062 8.78125C11.0521 9.63542 10.625 10.6667 10.625 11.875C10.625 13.0833 11.0521 14.1146 11.9062 14.9688C12.7604 15.8229 13.7917 16.25 15 16.25ZM6.25 26.25C5.5625 26.25 4.97375 26.0054 4.48375 25.5163C3.99458 25.0263 3.75 24.4375 3.75 23.75V6.25C3.75 5.5625 3.99458 4.97375 4.48375 4.48375C4.97375 3.99458 5.5625 3.75 6.25 3.75H23.75C24.4375 3.75 25.0263 3.99458 25.5163 4.48375C26.0054 4.97375 26.25 5.5625 26.25 6.25V23.75C26.25 24.4375 26.0054 25.0263 25.5163 25.5163C25.0263 26.0054 24.4375 26.25 23.75 26.25H6.25ZM6.25 23.75H23.75V22.3125C22.625 21.2083 21.3179 20.3383 19.8288 19.7025C18.3387 19.0675 16.7292 18.75 15 18.75C13.2708 18.75 11.6617 19.0675 10.1725 19.7025C8.6825 20.3383 7.375 21.2083 6.25 22.3125V23.75Z"
+                  fill="#1C1B1F"
+                />
+              </g>
+            </svg>
+            <p>Pelanggan</p>
+          </a>
+          <a href="menu.html" class="item-menu">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_251_5031"
+                style="mask-type: alpha;"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="30"
+                height="30"
+              >
+                <rect width="30" height="30" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_251_5031)">
+                <path
+                  d="M17.5 12.375V10.25C18.1875 9.95833 18.8908 9.73958 19.61 9.59375C20.3283 9.44792 21.0833 9.375 21.875 9.375C22.4167 9.375 22.9479 9.41667 23.4688 9.5C23.9896 9.58333 24.5 9.6875 25 9.8125V11.8125C24.5 11.625 23.995 11.4846 23.485 11.3912C22.9742 11.2971 22.4375 11.25 21.875 11.25C21.0833 11.25 20.3229 11.3492 19.5938 11.5475C18.8646 11.745 18.1667 12.0208 17.5 12.375ZM17.5 19.25V17.125C18.1875 16.8333 18.8908 16.6146 19.61 16.4688C20.3283 16.3229 21.0833 16.25 21.875 16.25C22.4167 16.25 22.9479 16.2917 23.4688 16.375C23.9896 16.4583 24.5 16.5625 25 16.6875V18.6875C24.5 18.5 23.995 18.3596 23.485 18.2662C22.9742 18.1721 22.4375 18.125 21.875 18.125C21.0833 18.125 20.3229 18.2188 19.5938 18.4062C18.8646 18.5938 18.1667 18.875 17.5 19.25ZM17.5 15.8125V13.6875C18.1875 13.3958 18.8908 13.1771 19.61 13.0312C20.3283 12.8854 21.0833 12.8125 21.875 12.8125C22.4167 12.8125 22.9479 12.8542 23.4688 12.9375C23.9896 13.0208 24.5 13.125 25 13.25V15.25C24.5 15.0625 23.995 14.9221 23.485 14.8287C22.9742 14.7346 22.4375 14.6875 21.875 14.6875C21.0833 14.6875 20.3229 14.7867 19.5938 14.985C18.8646 15.1825 18.1667 15.4583 17.5 15.8125ZM16.25 21.3125C17.1667 20.875 18.0888 20.5467 19.0163 20.3275C19.9429 20.1092 20.8958 20 21.875 20C22.625 20 23.3596 20.0625 24.0788 20.1875C24.7971 20.3125 25.5208 20.5 26.25 20.75V8.375C25.5625 8.08333 24.8492 7.86458 24.11 7.71875C23.37 7.57292 22.625 7.5 21.875 7.5C20.8958 7.5 19.9271 7.625 18.9688 7.875C18.0104 8.125 17.1042 8.5 16.25 9V21.3125ZM15 25C14 24.2083 12.9167 23.5938 11.75 23.1562C10.5833 22.7188 9.375 22.5 8.125 22.5C7.25 22.5 6.39083 22.6146 5.5475 22.8438C4.70333 23.0729 3.89583 23.3958 3.125 23.8125C2.6875 24.0417 2.26583 24.0312 1.86 23.7812C1.45333 23.5312 1.25 23.1667 1.25 22.6875V7.625C1.25 7.39583 1.3075 7.17708 1.4225 6.96875C1.53667 6.76042 1.70833 6.60417 1.9375 6.5C2.91667 6.02083 3.92208 5.65083 4.95375 5.39C5.98458 5.13 7.04167 5 8.125 5C9.33333 5 10.5158 5.15625 11.6725 5.46875C12.8283 5.78125 13.9375 6.25 15 6.875C16.0625 6.25 17.1721 5.78125 18.3288 5.46875C19.4846 5.15625 20.6667 5 21.875 5C22.9583 5 24.0158 5.13 25.0475 5.39C26.0783 5.65083 27.0833 6.02083 28.0625 6.5C28.2917 6.60417 28.4638 6.76042 28.5788 6.96875C28.6929 7.17708 28.75 7.39583 28.75 7.625V22.6875C28.75 23.1667 28.5471 23.5312 28.1413 23.7812C27.7346 24.0312 27.3125 24.0417 26.875 23.8125C26.1042 23.3958 25.2967 23.0729 24.4525 22.8438C23.6092 22.6146 22.75 22.5 21.875 22.5C20.625 22.5 19.4167 22.7188 18.25 23.1562C17.0833 23.5938 16 24.2083 15 25Z"
+                  fill="#1C1B1F"
+                />
+              </g>
+            </svg>
+            <p>Menu</p>
+          </a>
+          <a href="reservasi.html" class="item-menu">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_237_5419"
+                style="mask-type: alpha;"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="30"
+                height="30"
+              >
+                <rect width="30" height="30" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_237_5419)">
+                <path
+                  d="M10 21.25C10.3542 21.25 10.6513 21.13 10.8913 20.89C11.1304 20.6508 11.25 20.3542 11.25 20C11.25 19.6458 11.1304 19.3487 10.8913 19.1087C10.6513 18.8696 10.3542 18.75 10 18.75C9.64583 18.75 9.34875 18.8696 9.10875 19.1087C8.86958 19.3487 8.75 19.6458 8.75 20C8.75 20.3542 8.86958 20.6508 9.10875 20.89C9.34875 21.13 9.64583 21.25 10 21.25ZM10 16.25C10.3542 16.25 10.6513 16.13 10.8913 15.89C11.1304 15.6508 11.25 15.3542 11.25 15C11.25 14.6458 11.1304 14.3487 10.8913 14.1087C10.6513 13.8696 10.3542 13.75 10 13.75C9.64583 13.75 9.34875 13.8696 9.10875 14.1087C8.86958 14.3487 8.75 14.6458 8.75 15C8.75 15.3542 8.86958 15.6508 9.10875 15.89C9.34875 16.13 9.64583 16.25 10 16.25ZM10 11.25C10.3542 11.25 10.6513 11.13 10.8913 10.89C11.1304 10.6508 11.25 10.3542 11.25 10C11.25 9.64583 11.1304 9.34875 10.8913 9.10875C10.6513 8.86958 10.3542 8.75 10 8.75C9.64583 8.75 9.34875 8.86958 9.10875 9.10875C8.86958 9.34875 8.75 9.64583 8.75 10C8.75 10.3542 8.86958 10.6508 9.10875 10.89C9.34875 11.13 9.64583 11.25 10 11.25ZM13.75 21.25H21.25V18.75H13.75V21.25ZM13.75 16.25H21.25V13.75H13.75V16.25ZM13.75 11.25H21.25V8.75H13.75V11.25ZM6.25 26.25C5.5625 26.25 4.97375 26.0054 4.48375 25.5163C3.99458 25.0263 3.75 24.4375 3.75 23.75V6.25C3.75 5.5625 3.99458 4.97375 4.48375 4.48375C4.97375 3.99458 5.5625 3.75 6.25 3.75H23.75C24.4375 3.75 25.0263 3.99458 25.5163 4.48375C26.0054 4.97375 26.25 5.5625 26.25 6.25V23.75C26.25 24.4375 26.0054 25.0263 25.5163 25.5163C25.0263 26.0054 24.4375 26.25 23.75 26.25H6.25Z"
+                  fill="#1C1B1F"
+                />
+              </g>
+            </svg>
+
+            <p>Reservasi</p>
+          </a>
+          <a href="order.html" class="item-menu">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_237_5425"
+                style="mask-type: alpha;"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="30"
+                height="30"
+              >
+                <rect width="30" height="30" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_237_5425)">
+                <path
+                  d="M7.5 27.5C6.8125 27.5 6.22417 27.2554 5.735 26.7663C5.245 26.2763 5 25.6875 5 25V10C5 9.3125 5.245 8.72417 5.735 8.235C6.22417 7.745 6.8125 7.5 7.5 7.5H10C10 6.125 10.4896 4.94792 11.4688 3.96875C12.4479 2.98958 13.625 2.5 15 2.5C16.375 2.5 17.5521 2.98958 18.5312 3.96875C19.5104 4.94792 20 6.125 20 7.5H22.5C23.1875 7.5 23.7763 7.745 24.2663 8.235C24.7554 8.72417 25 9.3125 25 10V25C25 25.6875 24.7554 26.2763 24.2663 26.7663C23.7763 27.2554 23.1875 27.5 22.5 27.5H7.5ZM11.25 13.75C11.6042 13.75 11.9013 13.63 12.1413 13.39C12.3804 13.1508 12.5 12.8542 12.5 12.5V10H10V12.5C10 12.8542 10.12 13.1508 10.36 13.39C10.5992 13.63 10.8958 13.75 11.25 13.75ZM12.5 7.5H17.5C17.5 6.8125 17.2554 6.22417 16.7663 5.735C16.2762 5.245 15.6875 5 15 5C14.3125 5 13.7242 5.245 13.235 5.735C12.745 6.22417 12.5 6.8125 12.5 7.5ZM18.75 13.75C19.1042 13.75 19.4013 13.63 19.6413 13.39C19.8804 13.1508 20 12.8542 20 12.5V10H17.5V12.5C17.5 12.8542 17.62 13.1508 17.86 13.39C18.0992 13.63 18.3958 13.75 18.75 13.75Z"
+                  fill="#1C1B1F"
+                />
+              </g>
+            </svg>
+
+            <p>Order</p>
+          </a>
+          <a href="#" class="item-menu active">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_258_6168"
+                style="mask-type: alpha;"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="30"
+                height="30"
+              >
+                <rect width="30" height="30" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_258_6168)">
+                <path
+                  d="M13.125 17.5H22.5V15H15.625L13.125 17.5ZM7.5 17.5H10.5625L17.9375 10.1875C18.0625 10.0625 18.125 9.90625 18.125 9.71875C18.125 9.53125 18.0625 9.375 17.9375 9.25L15.75 7.0625C15.625 6.9375 15.4688 6.875 15.2812 6.875C15.0938 6.875 14.9375 6.9375 14.8125 7.0625L7.5 14.4375V17.5ZM2.5 27.5V5C2.5 4.3125 2.745 3.72375 3.235 3.23375C3.72417 2.74458 4.3125 2.5 5 2.5H25C25.6875 2.5 26.2763 2.74458 26.7663 3.23375C27.2554 3.72375 27.5 4.3125 27.5 5V20C27.5 20.6875 27.2554 21.2763 26.7663 21.7663C26.2763 22.2554 25.6875 22.5 25 22.5H7.5L2.5 27.5Z"
+                  fill="white"
+                />
+              </g>
+            </svg>
+
+            <p>Ulasan</p>
+          </a>
+        </div>
+      </nav>
+      <footer>
+        <div
+          class="d-flex gap-3 align-items-center mb-4 position-absolute bottom-0 start-50 translate-middle-x"
+        >
+          <img src="./assets/images/admin.png" alt="Mode Display" />
+          <p id="label-mode" class="flex-fill label-mode fw-bold text-black">
+            Admin
+          </p>
+        </div>
+      </footer>
+    </aside>
+    <main class="content flex-fill">
+      <section>
+        <button
+          aria-controls="sidebar"
+          data-bs-toggle="offcanvas"
+          data-bs-target=".sidebar"
+          aria-label="Button Hamburger"
+          class="sidebarOffcanvas mb-4 btn p-0 border-0 d-flex d-lg-none"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav-content gap-3">
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" class="form-control" placeholder="Search..." />
+          </div>
+          <div
+            class="btn btn-md text-white rounded-2 py-2 d-flex justify-content-end"
+            style="
+              background-color: #a80038;
+              right: 0;
+              font-size: 12px;
+              line-height: 24px;
+            "
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#tambahMenu"
+          >
+            <i
+              data-feather="plus"
+              class="me-2"
+              style="
+                color: #fff;
+                line-height: 24px;
+                height: 20px;
+                margin-top: 2px;
+              "
+            ></i>
+            Tambahkan Ulasan
+          </div>
+        </nav>
+      </section>
+
+      <section style="margin-top: -50px;">
+        <div class="row mt-3">
+          <div class="col-md-4 my-2">
+            <div class="card p-3 border-0 rounded-3">
+              <p
+                class="fw-normal text-black"
+                style="font-size: 12px; text-align: justify;"
+              >
+                “Ullamcorper nulla sapien tempor feugiat nisl eu sed imperdiet
+                senectus. In aliquet cursus fermentum sit. Erat quis aliquam
+                duis et massa augue lorem eu. .”
+              </p>
+              <div class="d-flex">
+                <div class="col-2 mt-4">
+                  <img
+                    src="assets/images/medium.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md mt-4 ms-1">
+                  <p class="fw-semibold text-danger">
+                    Ronald Medium
+                  </p>
+                  <p class="fw-normal text-black-50" style="font-size: 10px;">
+                    Temanggung Indonesia
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div class="card p-3 border-0 rounded-3">
+              <p
+                class="fw-normal text-black"
+                style="font-size: 12px; text-align: justify;"
+              >
+                “Ullamcorper nulla sapien tempor feugiat nisl eu sed imperdiet
+                senectus. In aliquet cursus fermentum sit. Erat quis aliquam
+                duis et massa augue lorem eu. .”
+              </p>
+              <div class="d-flex">
+                <div class="col-2 mt-4">
+                  <img
+                    src="assets/images/medium.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md mt-4 ms-1">
+                  <p class="fw-semibold text-danger">
+                    Ronald Medium
+                  </p>
+                  <p class="fw-normal text-black-50" style="font-size: 10px;">
+                    Temanggung Indonesia
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div class="card p-3 border-0 rounded-3">
+              <p
+                class="fw-normal text-black"
+                style="font-size: 12px; text-align: justify;"
+              >
+                “Ullamcorper nulla sapien tempor feugiat nisl eu sed imperdiet
+                senectus. In aliquet cursus fermentum sit. Erat quis aliquam
+                duis et massa augue lorem eu. .”
+              </p>
+              <div class="d-flex">
+                <div class="col-2 mt-4">
+                  <img
+                    src="assets/images/medium.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md mt-4 ms-1">
+                  <p class="fw-semibold text-danger">
+                    Ronald Medium
+                  </p>
+                  <p class="fw-normal text-black-50" style="font-size: 10px;">
+                    Temanggung Indonesia
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-4 my-2">
+            <div class="card p-3 border-0 rounded-3">
+              <p
+                class="fw-normal text-black"
+                style="font-size: 12px; text-align: justify;"
+              >
+                “Ullamcorper nulla sapien tempor feugiat nisl eu sed imperdiet
+                senectus. In aliquet cursus fermentum sit. Erat quis aliquam
+                duis et massa augue lorem eu. .”
+              </p>
+              <div class="d-flex">
+                <div class="col-2 mt-4">
+                  <img
+                    src="assets/images/medium.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md mt-4 ms-1">
+                  <p class="fw-semibold text-danger">
+                    Ronald Medium
+                  </p>
+                  <p class="fw-normal text-black-50" style="font-size: 10px;">
+                    Temanggung Indonesia
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div class="card p-3 border-0 rounded-3">
+              <p
+                class="fw-normal text-black"
+                style="font-size: 12px; text-align: justify;"
+              >
+                “Ullamcorper nulla sapien tempor feugiat nisl eu sed imperdiet
+                senectus. In aliquet cursus fermentum sit. Erat quis aliquam
+                duis et massa augue lorem eu. .”
+              </p>
+              <div class="d-flex">
+                <div class="col-2 mt-4">
+                  <img
+                    src="assets/images/medium.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md mt-4 ms-1">
+                  <p class="fw-semibold text-danger">
+                    Ronald Medium
+                  </p>
+                  <p class="fw-normal text-black-50" style="font-size: 10px;">
+                    Temanggung Indonesia
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div class="card p-3 border-0 rounded-3">
+              <p
+                class="fw-normal text-black"
+                style="font-size: 12px; text-align: justify;"
+              >
+                “Ullamcorper nulla sapien tempor feugiat nisl eu sed imperdiet
+                senectus. In aliquet cursus fermentum sit. Erat quis aliquam
+                duis et massa augue lorem eu. .”
+              </p>
+              <div class="d-flex">
+                <div class="col-2 mt-4">
+                  <img
+                    src="assets/images/medium.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md mt-4 ms-1">
+                  <p class="fw-semibold text-danger">
+                    Ronald Medium
+                  </p>
+                  <p class="fw-normal text-black-50" style="font-size: 10px;">
+                    Temanggung Indonesia
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-4 my-2">
+            <div class="card p-3 border-0 rounded-3">
+              <p
+                class="fw-normal text-black"
+                style="font-size: 12px; text-align: justify;"
+              >
+                “Ullamcorper nulla sapien tempor feugiat nisl eu sed imperdiet
+                senectus. In aliquet cursus fermentum sit. Erat quis aliquam
+                duis et massa augue lorem eu. .”
+              </p>
+              <div class="d-flex">
+                <div class="col-2 mt-4">
+                  <img
+                    src="assets/images/medium.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md mt-4 ms-1">
+                  <p class="fw-semibold text-danger">
+                    Ronald Medium
+                  </p>
+                  <p class="fw-normal text-black-50" style="font-size: 10px;">
+                    Temanggung Indonesia
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div class="card p-3 border-0 rounded-3">
+              <p
+                class="fw-normal text-black"
+                style="font-size: 12px; text-align: justify;"
+              >
+                “Ullamcorper nulla sapien tempor feugiat nisl eu sed imperdiet
+                senectus. In aliquet cursus fermentum sit. Erat quis aliquam
+                duis et massa augue lorem eu. .”
+              </p>
+              <div class="d-flex">
+                <div class="col-2 mt-4">
+                  <img
+                    src="assets/images/medium.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md mt-4 ms-1">
+                  <p class="fw-semibold text-danger">
+                    Ronald Medium
+                  </p>
+                  <p class="fw-normal text-black-50" style="font-size: 10px;">
+                    Temanggung Indonesia
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div class="card p-3 border-0 rounded-3">
+              <p
+                class="fw-normal text-black"
+                style="font-size: 12px; text-align: justify;"
+              >
+                “Ullamcorper nulla sapien tempor feugiat nisl eu sed imperdiet
+                senectus. In aliquet cursus fermentum sit. Erat quis aliquam
+                duis et massa augue lorem eu. .”
+              </p>
+              <div class="d-flex">
+                <div class="col-2 mt-4">
+                  <img
+                    src="assets/images/medium.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md mt-4 ms-1">
+                  <p class="fw-semibold text-danger">
+                    Ronald Medium
+                  </p>
+                  <p class="fw-normal text-black-50" style="font-size: 10px;">
+                    Temanggung Indonesia
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      feather.replace()
+    </script>
+    <script src="./js/index.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
