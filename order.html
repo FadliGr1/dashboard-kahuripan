@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Dashboard for Kahuripan Coffe" />
+    <meta name="author" content="FadliGr | @fadligr1" />
+
+    <title>Kahuripan Coffe - Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/32f82e1dca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  </head>
+  <body>
+    <aside class="sidebar offcanvas-lg offcanvas-start">
+      <div class="d-flex justify-content-end m-4 d-block d-lg-none">
+        <button
+          data-bs-dismiss="offcanvas"
+          data-bs-target=".sidebar"
+          class="btn p-0 border-0 fs-4"
+          aria-label="Button Close"
+        >
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div class="logo-brand mt-lg-5">
+        <img src="./assets/images/logo.png" alt="Logo Shoso" height="50" />
+      </div>
+      <hr />
+      <nav class="menu flex-fill">
+        <div class="section-menu p-3">
+          <a href="index.html" class="item-menu">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_237_5437"
+                style="mask-type: alpha;"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="30"
+                height="30"
+              >
+                <rect width="30" height="30" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_237_5437)">
+                <path
+                  d="M20.8125 16.25L13.75 9.1875L20.8125 2.125L27.875 9.1875L20.8125 16.25ZM3.75 13.75V3.75H13.75V13.75H3.75ZM16.25 26.25V16.25H26.25V26.25H16.25ZM3.75 26.25V16.25H13.75V26.25H3.75Z"
+                  fill="#1C1B1F"
+                />
+              </g>
+            </svg>
+
+            <p>Dashboard</p>
+          </a>
+          <a href="pelanggan.html" class="item-menu">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_237_5413"
+                style="mask-type: alpha;"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="30"
+                height="30"
+              >
+                <rect width="30" height="30" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_237_5413)">
+                <path
+                  d="M15 16.25C16.2083 16.25 17.2396 15.8229 18.0938 14.9688C18.9479 14.1146 19.375 13.0833 19.375 11.875C19.375 10.6667 18.9479 9.63542 18.0938 8.78125C17.2396 7.92708 16.2083 7.5 15 7.5C13.7917 7.5 12.7604 7.92708 11.9062 8.78125C11.0521 9.63542 10.625 10.6667 10.625 11.875C10.625 13.0833 11.0521 14.1146 11.9062 14.9688C12.7604 15.8229 13.7917 16.25 15 16.25ZM6.25 26.25C5.5625 26.25 4.97375 26.0054 4.48375 25.5163C3.99458 25.0263 3.75 24.4375 3.75 23.75V6.25C3.75 5.5625 3.99458 4.97375 4.48375 4.48375C4.97375 3.99458 5.5625 3.75 6.25 3.75H23.75C24.4375 3.75 25.0263 3.99458 25.5163 4.48375C26.0054 4.97375 26.25 5.5625 26.25 6.25V23.75C26.25 24.4375 26.0054 25.0263 25.5163 25.5163C25.0263 26.0054 24.4375 26.25 23.75 26.25H6.25ZM6.25 23.75H23.75V22.3125C22.625 21.2083 21.3179 20.3383 19.8288 19.7025C18.3387 19.0675 16.7292 18.75 15 18.75C13.2708 18.75 11.6617 19.0675 10.1725 19.7025C8.6825 20.3383 7.375 21.2083 6.25 22.3125V23.75Z"
+                  fill="#1C1B1F"
+                />
+              </g>
+            </svg>
+            <p>Pelanggan</p>
+          </a>
+          <a href="menu.html" class="item-menu">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_251_5031"
+                style="mask-type: alpha;"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="30"
+                height="30"
+              >
+                <rect width="30" height="30" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_251_5031)">
+                <path
+                  d="M17.5 12.375V10.25C18.1875 9.95833 18.8908 9.73958 19.61 9.59375C20.3283 9.44792 21.0833 9.375 21.875 9.375C22.4167 9.375 22.9479 9.41667 23.4688 9.5C23.9896 9.58333 24.5 9.6875 25 9.8125V11.8125C24.5 11.625 23.995 11.4846 23.485 11.3912C22.9742 11.2971 22.4375 11.25 21.875 11.25C21.0833 11.25 20.3229 11.3492 19.5938 11.5475C18.8646 11.745 18.1667 12.0208 17.5 12.375ZM17.5 19.25V17.125C18.1875 16.8333 18.8908 16.6146 19.61 16.4688C20.3283 16.3229 21.0833 16.25 21.875 16.25C22.4167 16.25 22.9479 16.2917 23.4688 16.375C23.9896 16.4583 24.5 16.5625 25 16.6875V18.6875C24.5 18.5 23.995 18.3596 23.485 18.2662C22.9742 18.1721 22.4375 18.125 21.875 18.125C21.0833 18.125 20.3229 18.2188 19.5938 18.4062C18.8646 18.5938 18.1667 18.875 17.5 19.25ZM17.5 15.8125V13.6875C18.1875 13.3958 18.8908 13.1771 19.61 13.0312C20.3283 12.8854 21.0833 12.8125 21.875 12.8125C22.4167 12.8125 22.9479 12.8542 23.4688 12.9375C23.9896 13.0208 24.5 13.125 25 13.25V15.25C24.5 15.0625 23.995 14.9221 23.485 14.8287C22.9742 14.7346 22.4375 14.6875 21.875 14.6875C21.0833 14.6875 20.3229 14.7867 19.5938 14.985C18.8646 15.1825 18.1667 15.4583 17.5 15.8125ZM16.25 21.3125C17.1667 20.875 18.0888 20.5467 19.0163 20.3275C19.9429 20.1092 20.8958 20 21.875 20C22.625 20 23.3596 20.0625 24.0788 20.1875C24.7971 20.3125 25.5208 20.5 26.25 20.75V8.375C25.5625 8.08333 24.8492 7.86458 24.11 7.71875C23.37 7.57292 22.625 7.5 21.875 7.5C20.8958 7.5 19.9271 7.625 18.9688 7.875C18.0104 8.125 17.1042 8.5 16.25 9V21.3125ZM15 25C14 24.2083 12.9167 23.5938 11.75 23.1562C10.5833 22.7188 9.375 22.5 8.125 22.5C7.25 22.5 6.39083 22.6146 5.5475 22.8438C4.70333 23.0729 3.89583 23.3958 3.125 23.8125C2.6875 24.0417 2.26583 24.0312 1.86 23.7812C1.45333 23.5312 1.25 23.1667 1.25 22.6875V7.625C1.25 7.39583 1.3075 7.17708 1.4225 6.96875C1.53667 6.76042 1.70833 6.60417 1.9375 6.5C2.91667 6.02083 3.92208 5.65083 4.95375 5.39C5.98458 5.13 7.04167 5 8.125 5C9.33333 5 10.5158 5.15625 11.6725 5.46875C12.8283 5.78125 13.9375 6.25 15 6.875C16.0625 6.25 17.1721 5.78125 18.3288 5.46875C19.4846 5.15625 20.6667 5 21.875 5C22.9583 5 24.0158 5.13 25.0475 5.39C26.0783 5.65083 27.0833 6.02083 28.0625 6.5C28.2917 6.60417 28.4638 6.76042 28.5788 6.96875C28.6929 7.17708 28.75 7.39583 28.75 7.625V22.6875C28.75 23.1667 28.5471 23.5312 28.1413 23.7812C27.7346 24.0312 27.3125 24.0417 26.875 23.8125C26.1042 23.3958 25.2967 23.0729 24.4525 22.8438C23.6092 22.6146 22.75 22.5 21.875 22.5C20.625 22.5 19.4167 22.7188 18.25 23.1562C17.0833 23.5938 16 24.2083 15 25Z"
+                  fill="#1C1B1F"
+                />
+              </g>
+            </svg>
+            <p>Menu</p>
+          </a>
+          <a href="reservasi.html" class="item-menu">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_237_5419"
+                style="mask-type: alpha;"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="30"
+                height="30"
+              >
+                <rect width="30" height="30" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_237_5419)">
+                <path
+                  d="M10 21.25C10.3542 21.25 10.6513 21.13 10.8913 20.89C11.1304 20.6508 11.25 20.3542 11.25 20C11.25 19.6458 11.1304 19.3487 10.8913 19.1087C10.6513 18.8696 10.3542 18.75 10 18.75C9.64583 18.75 9.34875 18.8696 9.10875 19.1087C8.86958 19.3487 8.75 19.6458 8.75 20C8.75 20.3542 8.86958 20.6508 9.10875 20.89C9.34875 21.13 9.64583 21.25 10 21.25ZM10 16.25C10.3542 16.25 10.6513 16.13 10.8913 15.89C11.1304 15.6508 11.25 15.3542 11.25 15C11.25 14.6458 11.1304 14.3487 10.8913 14.1087C10.6513 13.8696 10.3542 13.75 10 13.75C9.64583 13.75 9.34875 13.8696 9.10875 14.1087C8.86958 14.3487 8.75 14.6458 8.75 15C8.75 15.3542 8.86958 15.6508 9.10875 15.89C9.34875 16.13 9.64583 16.25 10 16.25ZM10 11.25C10.3542 11.25 10.6513 11.13 10.8913 10.89C11.1304 10.6508 11.25 10.3542 11.25 10C11.25 9.64583 11.1304 9.34875 10.8913 9.10875C10.6513 8.86958 10.3542 8.75 10 8.75C9.64583 8.75 9.34875 8.86958 9.10875 9.10875C8.86958 9.34875 8.75 9.64583 8.75 10C8.75 10.3542 8.86958 10.6508 9.10875 10.89C9.34875 11.13 9.64583 11.25 10 11.25ZM13.75 21.25H21.25V18.75H13.75V21.25ZM13.75 16.25H21.25V13.75H13.75V16.25ZM13.75 11.25H21.25V8.75H13.75V11.25ZM6.25 26.25C5.5625 26.25 4.97375 26.0054 4.48375 25.5163C3.99458 25.0263 3.75 24.4375 3.75 23.75V6.25C3.75 5.5625 3.99458 4.97375 4.48375 4.48375C4.97375 3.99458 5.5625 3.75 6.25 3.75H23.75C24.4375 3.75 25.0263 3.99458 25.5163 4.48375C26.0054 4.97375 26.25 5.5625 26.25 6.25V23.75C26.25 24.4375 26.0054 25.0263 25.5163 25.5163C25.0263 26.0054 24.4375 26.25 23.75 26.25H6.25Z"
+                  fill="#1C1B1F"
+                />
+              </g>
+            </svg>
+
+            <p>Reservasi</p>
+          </a>
+          <a href="#" class="item-menu active">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_237_5562"
+                style="mask-type: alpha;"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="30"
+                height="30"
+              >
+                <rect width="30" height="30" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_237_5562)">
+                <path
+                  d="M7.5 27.5C6.8125 27.5 6.22417 27.2554 5.735 26.7663C5.245 26.2763 5 25.6875 5 25V10C5 9.3125 5.245 8.72417 5.735 8.235C6.22417 7.745 6.8125 7.5 7.5 7.5H10C10 6.125 10.4896 4.94792 11.4688 3.96875C12.4479 2.98958 13.625 2.5 15 2.5C16.375 2.5 17.5521 2.98958 18.5312 3.96875C19.5104 4.94792 20 6.125 20 7.5H22.5C23.1875 7.5 23.7763 7.745 24.2663 8.235C24.7554 8.72417 25 9.3125 25 10V25C25 25.6875 24.7554 26.2763 24.2663 26.7663C23.7763 27.2554 23.1875 27.5 22.5 27.5H7.5ZM11.25 13.75C11.6042 13.75 11.9013 13.63 12.1413 13.39C12.3804 13.1508 12.5 12.8542 12.5 12.5V10H10V12.5C10 12.8542 10.12 13.1508 10.36 13.39C10.5992 13.63 10.8958 13.75 11.25 13.75ZM12.5 7.5H17.5C17.5 6.8125 17.2554 6.22417 16.7663 5.735C16.2763 5.245 15.6875 5 15 5C14.3125 5 13.7242 5.245 13.235 5.735C12.745 6.22417 12.5 6.8125 12.5 7.5ZM18.75 13.75C19.1042 13.75 19.4013 13.63 19.6413 13.39C19.8804 13.1508 20 12.8542 20 12.5V10H17.5V12.5C17.5 12.8542 17.62 13.1508 17.86 13.39C18.0992 13.63 18.3958 13.75 18.75 13.75Z"
+                  fill="white"
+                />
+              </g>
+            </svg>
+
+            <p>Order</p>
+          </a>
+          <a href="ulasan.html" class="item-menu">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_237_5431"
+                style="mask-type: alpha;"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="30"
+                height="30"
+              >
+                <rect width="30" height="30" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_237_5431)">
+                <path
+                  d="M13.125 17.5H22.5V15H15.625L13.125 17.5ZM7.5 17.5H10.5625L17.9375 10.1875C18.0625 10.0625 18.125 9.90625 18.125 9.71875C18.125 9.53125 18.0625 9.375 17.9375 9.25L15.75 7.0625C15.625 6.9375 15.4688 6.875 15.2812 6.875C15.0938 6.875 14.9375 6.9375 14.8125 7.0625L7.5 14.4375V17.5ZM2.5 27.5V5C2.5 4.3125 2.745 3.72375 3.235 3.23375C3.72417 2.74458 4.3125 2.5 5 2.5H25C25.6875 2.5 26.2763 2.74458 26.7663 3.23375C27.2554 3.72375 27.5 4.3125 27.5 5V20C27.5 20.6875 27.2554 21.2763 26.7663 21.7663C26.2763 22.2554 25.6875 22.5 25 22.5H7.5L2.5 27.5Z"
+                  fill="#1C1B1F"
+                />
+              </g>
+            </svg>
+            <p>Ulasan</p>
+          </a>
+        </div>
+      </nav>
+      <footer>
+        <div
+          class="d-flex gap-3 align-items-center mb-4 position-absolute bottom-0 start-50 translate-middle-x"
+        >
+          <img src="./assets/images/admin.png" alt="Mode Display" />
+          <p id="label-mode" class="flex-fill label-mode fw-bold text-black">
+            Admin
+          </p>
+        </div>
+      </footer>
+    </aside>
+    <main class="content flex-fill">
+      <section>
+        <button
+          aria-controls="sidebar"
+          data-bs-toggle="offcanvas"
+          data-bs-target=".sidebar"
+          aria-label="Button Hamburger"
+          class="sidebarOffcanvas mb-4 btn p-0 border-0 d-flex d-lg-none"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav-content gap-3">
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" class="form-control" placeholder="Search..." />
+          </div>
+        </nav>
+      </section>
+      <section style="margin-top: -50px;">
+        <div class="card border-0 bg-white rounded-3 p-2">
+          <div class="row d-flex">
+            <div class="col-md d-flex my-1">
+              <div
+                class="kotak p-3 rounded-3"
+                style="background-color: #ffbd59;"
+              >
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_254_5821"
+                    style="mask-type: alpha;"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="25"
+                    height="25"
+                  >
+                    <rect width="25" height="25" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_254_5821)">
+                    <path
+                      d="M12.5 18.7499C14.2361 18.7499 15.7118 18.1423 16.9271 16.927C18.1424 15.7117 18.75 14.236 18.75 12.4999C18.75 10.7638 18.1424 9.28811 16.9271 8.07284C15.7118 6.85756 14.2361 6.24992 12.5 6.24992V12.4999L8.07292 16.927C8.68056 17.4999 9.36215 17.9471 10.1177 18.2687C10.8726 18.5895 11.6667 18.7499 12.5 18.7499ZM12.5 22.9166C11.059 22.9166 9.70486 22.643 8.4375 22.0958C7.17014 21.5492 6.06771 20.8072 5.13021 19.8697C4.19271 18.9322 3.45069 17.8298 2.90417 16.5624C2.35694 15.2951 2.08333 13.9409 2.08333 12.4999C2.08333 11.0589 2.35694 9.70478 2.90417 8.43742C3.45069 7.17006 4.19271 6.06763 5.13021 5.13013C6.06771 4.19263 7.17014 3.45027 8.4375 2.90304C9.70486 2.35652 11.059 2.08325 12.5 2.08325C13.941 2.08325 15.2951 2.35652 16.5625 2.90304C17.8299 3.45027 18.9323 4.19263 19.8698 5.13013C20.8073 6.06763 21.5493 7.17006 22.0958 8.43742C22.6431 9.70478 22.9167 11.0589 22.9167 12.4999C22.9167 13.9409 22.6431 15.2951 22.0958 16.5624C21.5493 17.8298 20.8073 18.9322 19.8698 19.8697C18.9323 20.8072 17.8299 21.5492 16.5625 22.0958C15.2951 22.643 13.941 22.9166 12.5 22.9166ZM12.5 20.8333C14.8264 20.8333 16.7969 20.026 18.4115 18.4114C20.026 16.7968 20.8333 14.8263 20.8333 12.4999C20.8333 10.1735 20.026 8.20304 18.4115 6.58846C16.7969 4.97388 14.8264 4.16659 12.5 4.16659C10.1736 4.16659 8.20312 4.97388 6.58854 6.58846C4.97396 8.20304 4.16667 10.1735 4.16667 12.4999C4.16667 14.8263 4.97396 16.7968 6.58854 18.4114C8.20312 20.026 10.1736 20.8333 12.5 20.8333Z"
+                      fill="#1C1B1F"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="isi px-2">
+                <p class="fw-bold text-black fs-5 align-self-baseline">25</p>
+                <p
+                  class="fw-normal text-black-75 align-self-end"
+                  style="font-size: 14px;"
+                >
+                  Proses
+                </p>
+              </div>
+            </div>
+            <div class="col-md d-flex my-1">
+              <div
+                class="kotak p-3 rounded-3"
+                style="background-color: #a6ff7c;"
+              >
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_254_5806"
+                    style="mask-type: alpha;"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="25"
+                    height="25"
+                  >
+                    <rect width="25" height="25" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_254_5806)">
+                    <path
+                      d="M6.25 20.8334C5.38195 20.8334 4.6441 20.5296 4.03646 19.922C3.42882 19.3143 3.12501 18.5765 3.12501 17.7084H1.04167V6.25008C1.04167 5.67716 1.24584 5.18689 1.65417 4.77925C2.06181 4.37091 2.55209 4.16675 3.12501 4.16675H17.7083V8.33341H20.8333L23.9583 12.5001V17.7084H21.875C21.875 18.5765 21.5712 19.3143 20.9635 19.922C20.3559 20.5296 19.6181 20.8334 18.75 20.8334C17.8819 20.8334 17.1441 20.5296 16.5365 19.922C15.9288 19.3143 15.625 18.5765 15.625 17.7084H9.375C9.375 18.5765 9.07119 19.3143 8.46355 19.922C7.85591 20.5296 7.11806 20.8334 6.25 20.8334ZM6.25 18.7501C6.54514 18.7501 6.79271 18.6501 6.99271 18.4501C7.19202 18.2508 7.29167 18.0036 7.29167 17.7084C7.29167 17.4133 7.19202 17.1661 6.99271 16.9667C6.79271 16.7667 6.54514 16.6667 6.25 16.6667C5.95487 16.6667 5.7073 16.7667 5.5073 16.9667C5.30799 17.1661 5.20834 17.4133 5.20834 17.7084C5.20834 18.0036 5.30799 18.2508 5.5073 18.4501C5.7073 18.6501 5.95487 18.7501 6.25 18.7501ZM3.12501 15.6251H3.95834C4.25348 15.3126 4.59202 15.0608 4.97396 14.8699C5.35591 14.6789 5.78125 14.5834 6.25 14.5834C6.71875 14.5834 7.1441 14.6789 7.52605 14.8699C7.90799 15.0608 8.24653 15.3126 8.54167 15.6251H15.625V6.25008H3.12501V15.6251ZM18.75 18.7501C19.0451 18.7501 19.2924 18.6501 19.4917 18.4501C19.6917 18.2508 19.7917 18.0036 19.7917 17.7084C19.7917 17.4133 19.6917 17.1661 19.4917 16.9667C19.2924 16.7667 19.0451 16.6667 18.75 16.6667C18.4549 16.6667 18.2076 16.7667 18.0083 16.9667C17.8083 17.1661 17.7083 17.4133 17.7083 17.7084C17.7083 18.0036 17.8083 18.2508 18.0083 18.4501C18.2076 18.6501 18.4549 18.7501 18.75 18.7501ZM17.7083 13.5417H22.1354L19.7917 10.4167H17.7083V13.5417Z"
+                      fill="#1C1B1F"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="isi px-2">
+                <p class="fw-bold text-black fs-5 align-self-baseline">15</p>
+                <p
+                  class="fw-normal text-black-75 align-self-end"
+                  style="font-size: 14px;"
+                >
+                  Delivery
+                </p>
+              </div>
+            </div>
+            <div class="col-md d-flex my-1">
+              <div
+                class="kotak p-3 rounded-3"
+                style="background-color: #ff8947;"
+              >
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_254_5814"
+                    style="mask-type: alpha;"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="25"
+                    height="25"
+                  >
+                    <rect width="25" height="25" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_254_5814)">
+                    <path
+                      d="M5.20833 22.9167C4.63542 22.9167 4.14479 22.7129 3.73646 22.3053C3.32882 21.897 3.125 21.4063 3.125 20.8334V8.33341C3.125 7.7605 3.32882 7.27022 3.73646 6.86258C4.14479 6.45425 4.63542 6.25008 5.20833 6.25008H7.29167C7.29167 4.80911 7.79965 3.58064 8.81563 2.56466C9.8309 1.54939 11.059 1.04175 12.5 1.04175C13.941 1.04175 15.1694 1.54939 16.1854 2.56466C17.2007 3.58064 17.7083 4.80911 17.7083 6.25008H19.7917C20.3646 6.25008 20.8552 6.45425 21.2635 6.86258C21.6712 7.27022 21.875 7.7605 21.875 8.33341V20.8334C21.875 21.4063 21.6712 21.897 21.2635 22.3053C20.8552 22.7129 20.3646 22.9167 19.7917 22.9167H5.20833ZM5.20833 20.8334H19.7917V8.33341H5.20833V20.8334ZM12.5 14.5834C13.941 14.5834 15.1694 14.0754 16.1854 13.0595C17.2007 12.0442 17.7083 10.8161 17.7083 9.37508H15.625C15.625 10.2431 15.3212 10.981 14.7135 11.5886C14.1059 12.1963 13.3681 12.5001 12.5 12.5001C11.6319 12.5001 10.8941 12.1963 10.2865 11.5886C9.67882 10.981 9.375 10.2431 9.375 9.37508H7.29167C7.29167 10.8161 7.79965 12.0442 8.81563 13.0595C9.8309 14.0754 11.059 14.5834 12.5 14.5834ZM9.375 6.25008H15.625C15.625 5.38203 15.3212 4.64418 14.7135 4.03654C14.1059 3.4289 13.3681 3.12508 12.5 3.12508C11.6319 3.12508 10.8941 3.4289 10.2865 4.03654C9.67882 4.64418 9.375 5.38203 9.375 6.25008Z"
+                      fill="#1C1B1F"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="isi px-2">
+                <p class="fw-bold text-black fs-5 align-self-baseline">50</p>
+                <p
+                  class="fw-normal text-black-75 align-self-end"
+                  style="font-size: 14px;"
+                >
+                  Total Pesanan
+                </p>
+              </div>
+            </div>
+            <div class="col-md d-flex my-1">
+              <div
+                class="kotak p-3 rounded-3"
+                style="background-color: #a6ff7c;"
+              >
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_254_5806"
+                    style="mask-type: alpha;"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="25"
+                    height="25"
+                  >
+                    <rect width="25" height="25" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_254_5806)">
+                    <path
+                      d="M6.25 20.8334C5.38195 20.8334 4.6441 20.5296 4.03646 19.922C3.42882 19.3143 3.12501 18.5765 3.12501 17.7084H1.04167V6.25008C1.04167 5.67716 1.24584 5.18689 1.65417 4.77925C2.06181 4.37091 2.55209 4.16675 3.12501 4.16675H17.7083V8.33341H20.8333L23.9583 12.5001V17.7084H21.875C21.875 18.5765 21.5712 19.3143 20.9635 19.922C20.3559 20.5296 19.6181 20.8334 18.75 20.8334C17.8819 20.8334 17.1441 20.5296 16.5365 19.922C15.9288 19.3143 15.625 18.5765 15.625 17.7084H9.375C9.375 18.5765 9.07119 19.3143 8.46355 19.922C7.85591 20.5296 7.11806 20.8334 6.25 20.8334ZM6.25 18.7501C6.54514 18.7501 6.79271 18.6501 6.99271 18.4501C7.19202 18.2508 7.29167 18.0036 7.29167 17.7084C7.29167 17.4133 7.19202 17.1661 6.99271 16.9667C6.79271 16.7667 6.54514 16.6667 6.25 16.6667C5.95487 16.6667 5.7073 16.7667 5.5073 16.9667C5.30799 17.1661 5.20834 17.4133 5.20834 17.7084C5.20834 18.0036 5.30799 18.2508 5.5073 18.4501C5.7073 18.6501 5.95487 18.7501 6.25 18.7501ZM3.12501 15.6251H3.95834C4.25348 15.3126 4.59202 15.0608 4.97396 14.8699C5.35591 14.6789 5.78125 14.5834 6.25 14.5834C6.71875 14.5834 7.1441 14.6789 7.52605 14.8699C7.90799 15.0608 8.24653 15.3126 8.54167 15.6251H15.625V6.25008H3.12501V15.6251ZM18.75 18.7501C19.0451 18.7501 19.2924 18.6501 19.4917 18.4501C19.6917 18.2508 19.7917 18.0036 19.7917 17.7084C19.7917 17.4133 19.6917 17.1661 19.4917 16.9667C19.2924 16.7667 19.0451 16.6667 18.75 16.6667C18.4549 16.6667 18.2076 16.7667 18.0083 16.9667C17.8083 17.1661 17.7083 17.4133 17.7083 17.7084C17.7083 18.0036 17.8083 18.2508 18.0083 18.4501C18.2076 18.6501 18.4549 18.7501 18.75 18.7501ZM17.7083 13.5417H22.1354L19.7917 10.4167H17.7083V13.5417Z"
+                      fill="#1C1B1F"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="isi px-2">
+                <p class="fw-bold text-black fs-5 align-self-baseline">15</p>
+                <p
+                  class="fw-normal text-black-75 align-self-end"
+                  style="font-size: 14px;"
+                >
+                  Delivery
+                </p>
+              </div>
+            </div>
+            <div class="col-md d-flex my-1">
+              <div
+                class="kotak p-3 rounded-3"
+                style="background-color: #ffbd59;"
+              >
+                <svg
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_254_5814"
+                    style="mask-type: alpha;"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="25"
+                    height="25"
+                  >
+                    <rect width="25" height="25" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_254_5814)">
+                    <path
+                      d="M5.20833 22.9167C4.63542 22.9167 4.14479 22.7129 3.73646 22.3053C3.32882 21.897 3.125 21.4063 3.125 20.8334V8.33341C3.125 7.7605 3.32882 7.27022 3.73646 6.86258C4.14479 6.45425 4.63542 6.25008 5.20833 6.25008H7.29167C7.29167 4.80911 7.79965 3.58064 8.81563 2.56466C9.8309 1.54939 11.059 1.04175 12.5 1.04175C13.941 1.04175 15.1694 1.54939 16.1854 2.56466C17.2007 3.58064 17.7083 4.80911 17.7083 6.25008H19.7917C20.3646 6.25008 20.8552 6.45425 21.2635 6.86258C21.6712 7.27022 21.875 7.7605 21.875 8.33341V20.8334C21.875 21.4063 21.6712 21.897 21.2635 22.3053C20.8552 22.7129 20.3646 22.9167 19.7917 22.9167H5.20833ZM5.20833 20.8334H19.7917V8.33341H5.20833V20.8334ZM12.5 14.5834C13.941 14.5834 15.1694 14.0754 16.1854 13.0595C17.2007 12.0442 17.7083 10.8161 17.7083 9.37508H15.625C15.625 10.2431 15.3212 10.981 14.7135 11.5886C14.1059 12.1963 13.3681 12.5001 12.5 12.5001C11.6319 12.5001 10.8941 12.1963 10.2865 11.5886C9.67882 10.981 9.375 10.2431 9.375 9.37508H7.29167C7.29167 10.8161 7.79965 12.0442 8.81563 13.0595C9.8309 14.0754 11.059 14.5834 12.5 14.5834ZM9.375 6.25008H15.625C15.625 5.38203 15.3212 4.64418 14.7135 4.03654C14.1059 3.4289 13.3681 3.12508 12.5 3.12508C11.6319 3.12508 10.8941 3.4289 10.2865 4.03654C9.67882 4.64418 9.375 5.38203 9.375 6.25008Z"
+                      fill="#1C1B1F"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="isi px-2">
+                <p class="fw-bold text-black fs-5 align-self-baseline">50</p>
+                <p
+                  class="fw-normal text-black-75 align-self-end"
+                  style="font-size: 14px;"
+                >
+                  Total Pesanan
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: -50px;">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card border-0 py-3">
+              <div class="d-flex">
+                <div class="card-title ms-2 me-3 pt-2">Pesanan</div>
+                <div class="search me-2">
+                  <i class="fa fa-search"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    style="border: 1px solid #b2acac;"
+                    placeholder="Search..."
+                  />
+                </div>
+              </div>
+
+              <div class="table-responsive mt-4">
+                <table class="table">
+                  <thead>
+                    <tr class="thed">
+                      <th class="col">ID Pesanan</th>
+                      <th class="col">Nama</th>
+                      <th class="col">Pesanan</th>
+                      <th class="col">Jumlah</th>
+                      <th class="col">Tanggal</th>
+                      <th class="col">Kota</th>
+                      <th class="col">Alamat</th>
+                      <th class="col">Harga</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="ter">
+                      <th class="teri teks">
+                        12263
+                      </th>
+                      <th class="teri teks">
+                        Dady Bimas
+                      </th>
+                      <th class="teri teks">
+                        1 Ayam Krispi, 1 sop kangkung,2 es teh..
+                      </th>
+                      <th class="teri teks">
+                        3 Item
+                      </th>
+                      <th class="teri teks">
+                        09.00 wib, 22 Des 2022
+                      </th>
+                      <th class="teri teks">
+                        Semarang
+                      </th>
+                      <th class="teri teks">
+                        Jl. Mayjen Sungkono No.89..
+                      </th>
+                      <th class="teri teks">
+                        Rp. 250,000
+                      </th>
+
+                      <!-- detail modal -->
+                      <div
+                        class="modal fade"
+                        id="detail"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog p-3">
+                          <div class="modal-content">
+                            <div class="modal-header border-0">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel"
+                              >
+                                Pelanggan
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body border-0 p-3">
+                              <div class="row">
+                                <div class="col-md-2">
+                                  <img
+                                    src="assets/images/admin.png"
+                                    alt=""
+                                    class="img-dluid"
+                                  />
+                                </div>
+                                <div class="col-md-10 mt-2">
+                                  <p class="fw-semibold text-black">
+                                    Dady Bima
+                                  </p>
+                                  <p class="fw-normal text-black-50">
+                                    dadybima@gmail.com
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="row my-2">
+                                <p class="fw-normal text-black">
+                                  Nomor Hp
+                                </p>
+                                <p class="fw-normal text-black-50">
+                                  087744370328
+                                </p>
+                              </div>
+                              <div class="row">
+                                <p class="fw-normal text-black">
+                                  Kota
+                                </p>
+                                <p class="fw-normal text-black-50">
+                                  Semarang
+                                </p>
+                              </div>
+                              <div class="row my-2">
+                                <p class="fw-normal text-black">
+                                  Alamat
+                                </p>
+                                <p class="fw-normal text-black-50">
+                                  Jl. Bulustalan V No.708-C, Bulustalan, Kec.
+                                  Semarang Sel., Kota Semarang, Jawa Tengah
+                                  50245
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end detail modal -->
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      feather.replace()
+    </script>
+    <script src="./js/index.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
