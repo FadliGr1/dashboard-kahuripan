@@ -77,14 +77,20 @@
   top: 16px;
   left: 16px;
 }
+@media (max-width: 1400px) {
+  .atas {
+    width: 700px !important;
+  }
+}
 
 @media (min-width: 1200px) {
   .bawah {
-    margin-top: -180px;
+    margin-top: -156px;
+    /* width: 600px !important; */
   }
 
   .bawah-satu {
-    margin-top: -128px;
+    margin-top: -108px;
   }
 
   .atas {
@@ -109,7 +115,7 @@
 
   .ter .teks {
     padding-top: 26px;
-    font-size: 14px;
+    font-size: 16px !important;
   }
 }
 
